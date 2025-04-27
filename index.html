@@ -9,6 +9,19 @@
             font-family: Arial, sans-serif;
             background-color: #f0f8ff; /* Light background */
             color: #333; /* Dark text for contrast */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         button {
@@ -23,6 +36,7 @@
             margin: 4px 2px;
             cursor: pointer;
             transition: background-color 0.3s ease;
+            border-radius: 4px;
         }
 
         button:hover {
@@ -42,9 +56,11 @@
     </style>
 </head>
 <body>
-    <button id="factButton">Show Random Fact</button>
-    <div class="fact-display" id="factDisplay"></div>
-    <button id="twitterButton">Share to Twitter</button>
+    <div class="container">
+        <button id="factButton">Show Random Fact</button>
+        <div class="fact-display" id="factDisplay"></div>
+        <button id="twitterButton">Share to Twitter</button>
+    </div>
 
     <script>
         const facts = [
